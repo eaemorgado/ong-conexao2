@@ -1,0 +1,133 @@
+body {
+    font-family: "Montserrat", sans-serif; 
+    background-color: #eefbff;
+    scroll-behavior: smooth;
+}
+
+main img {
+    width: 100%;
+    max-height: 700px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.sec-maturidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.viva-maturidade {
+    height: 400px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.viva-maturidade h3 {
+    width: 70%;
+    padding: 25px 25px 0px 25px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #2946a0;
+}
+
+.viva-maturidade p {
+    display: flex;
+    columns: 200px 1;
+    column-gap: 10px;
+    padding: 25px;
+}
+
+.viva-maturidade p:nth-last-child(1) {
+    padding-top: 0px;
+}
+
+/* Imagens da primeira section */
+
+.div-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 300px;
+    min-width: 200px;
+    max-height: 200px;
+}
+
+/* Area de projetos */
+
+.out-projetos h3{
+    width: 70%;
+    padding: 25px 25px 0px 25px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #2946a0;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 30%;
+    min-width: 300px;
+    height: 350px;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 30px;
+    transition: ease 0.3s;
+}
+
+.projs:hover {
+    transform: scale(1.02);
+}
+
+.projs img {
+    width: 100%;
+}
+
+.projs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 30px 30px;
+}
+
+.projs h4 {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-size: large;
+    font-weight: bold;
+    color: #2946a0;
+}
+
+.projs img {
+    width: 100%;
+    height: 100px;
+}

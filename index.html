@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-icon.png" type="image/icon type">
+
+    <!-- Bootstrap -->
+    
+    <!--Links CSS-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+     <!-- Abaixo links da biblioteva de animação AOS -->
+    
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+
+     <!-- Abaixo estão os links do icones css -->
+ 
+     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/smile-mouth-open.css' rel='stylesheet'>
+     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/screen.css' rel='stylesheet'>
+     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/notes.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!--Links JS-->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+
+    <title>Conexão - Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo"><img src="./img/LogoHorizontal.png" alt=""></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#historia">Nossa história</a></li>
+                <li><a href="#apoio">#apoie</a></li>
+                <li><a href="">Transparência</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="carousel">
+                <div class="slide">
+                    <img src="img/bemviver.jpg" alt="Imagem 1">
+                    <div class="text">
+                        <h3>Projeto - Bem Viver</h3>
+                        <p>O Projeto Bem Viver tem como objetivo contribuir com a
+                            melhoria da qualidade de vida do idoso garantindo, por meio do
+                            convívio social, o estabelecimento de relações de respeito e
+                            afetividade e o envelhecimento saudável...</p>
+                        <a href="#apoio">
+                            <button>Seja um Apoiador</button>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="slide">
+                    <img src="img/viva-maturidade.jpg" alt="Imagem 2">
+                    <div class="text">
+                        <h3>Projeto - Viva Maturidade</h3>
+                        <p>O Projeto Viva Maturidade tem como objetivo proporcionar espaço
+                            de estar, convívio e trabalhos socioeducativos para pessoas idosas
+                            com 60 anos ou mais. Esta iniciativa complementa o trabalho social...</p>
+                        <a href="#apoio">
+                            <button>Seja um Apoiador</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/academia-3a.jpg" alt="Imagem 3">
+                    <div class="text">
+                        <h3>Projeto - Academia para 3ª idade</h3>
+                        <p>O Projeto Academia para terceira idade contribui para a melhoria
+                            da qualidade de vida dos idosos e garante, por meio do convívio
+                            social, o estabelecimento de relações de respeito, afetividade e
+                            envelhecimento saudável...</p>
+                        <a href="apoio">
+                            <button>Seja um Apoiador</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="button-carrossel">
+                    <img src="img/seta-esquerda.png" alt="" class="prev" alt="Anterior" onclick="prevSlide()">
+                    <img src="img/seta-direita.png" alt="" class="next" alt="Anterior" onclick="nextSlide()">
+    
+                </div>
+                
+            </div>
+            
+            
+        </section>
+    <script src="js/carrossel.js"></script>
+    
+
+    <div id="stats" class="stats">
+        <div class="stat">
+            <div class="number" data-target="327749">0</div>
+            <p>OFICINAS OU CAPACITAÇÕES</p>
+        </div>
+        <div class="stat">
+            <div class="number" data-target="294211">0</div>
+            <p>PESSOAS ATENDIDAS</p>
+        </div>
+        <div class="stat">
+            <div class="number" data-target="66565">0</div>
+            <p>PESSOAS IMPACTADAS</p>
+        </div>
+        <!-- <div class="stat">
+            <div class="number" data-target="14000">0</div>
+            <p>Atendimentos</p>
+        </div> -->
+    </div>
+    <script src="js/contagem.js"></script>
+
+        <div id="projetos">
+            <h3>Conheça nossos projetos</h3>
+            <div id="projetos-div" data-aos="fade-up">
+              <div class="card">
+                <img src="img/bemviver.jpg" alt="Bem Viver">
+                <h4>Bem Viver</h4>
+                <p>O Projeto Bem Viver tem como objetivo contribuir com a melhoria da qualidade de vida do idoso...</p>
+                <button>Conhecer Projeto</button>
+              </div>
+              <div class="card" >
+                <img src="img/viva-maturidade.jpg" alt="Viva Maturidade">
+                <h4>Viva Maturidade</h4>
+                <p>O Projeto Viva Maturidade tem como objetivo proporcionar espaço de estar, convívio e trabalhos...</p>
+                <button>Conhecer Projeto</button>
+              </div>
+              <div class="card" >
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/U61aqlW9p8E?si=12gU7De2PDG9lEcZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h4>Academia para 3ª idade</h4>
+                <p>O Projeto Academia para terceira idade contribui para a melhoria da qualidade de vida dos idosos...</p>
+                <button>Conhecer Projeto</button>
+              </div>
+            </div>
+          </div>
+          
+          <div id="historia">
+            <section id="Missão" data-aos="fade-up">
+                <div>
+                    <h3>Nossa história</h3>
+                    <p>A ONG Conexão – Serviço de Integração Social
+                        foi criada a partir da inquietude de um grupo de
+                        profissionais do 1o Conselho Tutelar do município
+                        de Carapicuíba (SP), ao constatar a carência de
+                        trabalhos voltados para os jovens e adolescentes
+                        no município, especialmente aqueles em
+                        situação de risco social, os quais, mesmo com o
+                        advento do ECA (Estatuto da Criança e do
+                        Adolescente), continuaram sem acesso aos
+                        direitos e serviços minimamente necessários
+                        para sua formação.</p>
+                    <p>
+                        A criação da Conexão se pautou no propósito de
+                        desenvolver uma ação direta e positiva junto a
+                        jovens, em parceria com o Grupo de Senhoras
+                        Estrela Azul.
+                    </p>
+                    <p>
+                        Assim, em julho de 2001, foi criada a
+                        Conexão - Serviço de Integração Social, com a
+                        finalidade de desenvolver programas de inclusão
+                        e protagonismo social e, ainda, de medidas
+                        socioeducativas.
+                    </p>
+                </div>
+            </section>
+          </div>
+        
+
+        <section id="apoio">
+        
+            <div id="apoio-info">   
+             <div data-aos="fade-up">   
+                 <h4> Faça a diferença </h4>
+                 <p> Apoie os nossos projetos </p>
+                 <p> Para garantir os atendimentos 
+                    semanais dos usuários em nossa 
+                    sede social, a equipe Conexão 
+                    conta com você! Nossa necessidade
+                    urgente abraça desde alimetos e 
+                    materiais de escritótio até itens 
+                    pedagógicos, produtos de limpeza e 
+                    higiene. Junte- se a nós nessa cuida
+                    vital, onde cada doação é um elo
+                    fortalecedor, tecendo um futuro 
+                    mais próspero e acolhedor para 
+                    todos.
+                 </p>
+             </div>
+             <div data-aos="fade-up" data-aos-delay="200">
+                <div class="card-pg">
+                    <div class="tabs">
+                      <div class="tab active" data-target="pix">PIX</div>
+                      <div class="tab" data-target="cartao">Funcad</div>
+                      <div class="tab" data-target="transferencia">Transferência</div>
+                    </div>
+                
+                    <div class="content active" id="pix">
+                      <div>
+                        <img src="img/qr-code.png" alt="">
+                        <div id="info-pix">
+                            <h3>Como faz para pagar?</h3>
+                            <span>1. Acesse o Pix dentro do app do seu banco;</span>     
+                            <span>2. Selecione "pagar QR Code";</span>
+                            <span>3. Escaneie o QR Code e pronto.</span>
+                            <h3>Se preferir, pague com a chave Pix</h3>
+                            <span>04.633.305/0001-91</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content" id="cartao">
+                        <div id="info-pix">
+                            <h3>Doação via Funcad</h3>
+                        <span style="padding: 10px;">Toda doação feita via Fundo da Criança e do Adolescente (Fumcad) ou através do Fundo 
+                            Municipal do Idoso pode ser abatida no total do imposto de renda devido. <br> Respeitando 
+                            o limite de 1% do lucro operacional para pessoa jurídica e 6% para pessoa física.</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="content" id="transferencia">
+                        <div id="info-pix">
+                            <h3>Transferência</h3>
+                        <span>
+                            Banco: Itaú <br>
+                            <br>
+                            Agência: 0551 <br>
+                            <br>
+                            C/C: 46.227-8 <br>
+                            <br>
+                            CNPJ: 04.633.305/0001-91</span>
+                        </div>
+                        
+                      </div>
+                    
+                    
+                </div>
+             </div>
+             
+            
+                
+            
+                
+            
+            
+            <!-- <div id="apoio-assinatura">
+                <h3>Escolha como apoiar </h3>
+                <h4>Plano de assinatura para doação mensal:</h4>
+                <div id="apoio-valores">
+                    <div>
+                        <h3> R$30 </h3>
+                        <h4> Todo mês </h4>
+                        <h6> <span style="font-weight: 800;"> Invista 1 real </span> por dia </h6>
+                        <button> Apoiar </button>
+                    </div>
+                    <div>
+                        <h3> R$50 </h3>
+                        <h4> Todo mês </h4>
+                        <h6> <span style="font-weight: 800;"> Invista R$ 1,66 </span> por dia </h6>
+                        <button> Apoiar </button>
+                    </div>
+                    <div>
+                        <h3> R$100 </h3>
+                        <h4> Todo mês </h4>
+                        <h6> <span style="font-weight: 800;"> Invista R$ 3,33 </span> por dia </h6>
+                        <button> Apoiar </button>
+                    </div>
+                </div> -->
+               
+            </div> 
+            
+        </section>
+
+        <section id="parceiros">
+            <div id="parceiros-info">
+                <h3>Parceiros e Patrocinadores</h3>
+                <p>Transformando Vidas com Parcerias: O Conexão tem como meta a promoção pessoal
+                    e a inclusão social de seus públicos através de programas voltados ao protagonismo
+                    e empreendedorismo social e comunitário, trabalha ombro-a-ombro com seus parceiros
+                    governamentais, empresariais, e da sociedade civil.</p>
+                <span>Passe o mouse sobre as empresas e saiba mais!</span>
+            </div>
+
+            <div id="parceiros-logo" data-aos="fade-up" data-aos-delay="50">
+                <div class="grid-container-logo">
+                    <!-- <div class="grid-item-logo" onmouseover="showPopup('popup1')" onmouseout="hidePopup('popup1')">
+                        <div class="content-logo"><img src="img/logos/comgas-logo.png" alt=""></div>
+                        <div class="popup" id="popup1">
+                            <p>Aqui vão mais informações sobre a empresa.</p>
+                            <a href="http://www.site-da-empresa.com" target="_blank"><button>Visitar</button></a>
+                        </div>
+                        
+                    </div> -->
+                    <div class="grid-item-logo" onmouseover="showPopup('popup1')" onmouseout="hidePopup('popup1')">
+                        <div class="content-logo"><img src="img/logos/comgas-logo.png" alt=""></div>
+                        <div class="popup" id="popup1">
+                            <p>Conheça a líder Comgás: soluções energéticas inovadoras e sustentáveis com gás natural para vida e negócios. Transforme sua energia conosco!</p>
+                            <a href="https://www.comgas.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                        
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup2')" onmouseout="hidePopup('popup2')">
+                        <div class="content-logo"><img src="img/logos/cielo.png" alt=""></div>
+                        <div class="popup" id="popup2">
+                            <p>A Cielo tem a maquininha de cartão ideal para você · Venda mais nas maquininhas, online e pelo celular</p>
+                            <a href="https://www.cielo.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup3')" onmouseout="hidePopup('popup3')">
+                        <div class="content-logo"><img src="img/logos/unisys.png" alt=""></div>
+                        <div class="popup" id="popup3">
+                            <p>A Unisys é uma empresa de soluções de tecnologia que fornece resultados bem-sucedidos as organizações mais exigentes do mundo.</p>
+                            <a href="https://www.unisys.com/pt/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup4')" onmouseout="hidePopup('popup4')">
+                        <div class="content-logo"><img src="img/logos/itapevi.png" alt=""></div>
+                        <div class="popup" id="popup4">
+                            <p>Prefeitura Municipal de itapevi.</p>
+                            <a href="https://itapevi.sp.gov.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup5')" onmouseout="hidePopup('popup5')">
+                        <div class="content-logo"><img src="img/logos/carapicuiba.png" alt=""></div>
+                        <div class="popup" id="popup5">
+                            <p>Prefeitura Municipal de Carapicuíba</p>
+                            <a href="https://carapicuiba.sp.gov.br/site" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup6')" onmouseout="hidePopup('popup6')">
+                        <div class="content-logo"><img src="img/logos/uol.png" alt=""></div>
+                        <div class="popup" id="popup6">
+                            <p>a maior empresa brasileira de conteúdo, serviços digitais e tecnologia com vários canais de jornalismo e diversas soluções para você ou seu negócio.</p>
+                            <a href="https://www.uol.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup7')" onmouseout="hidePopup('popup7')">
+                        <div class="content-logo"><img src="img/logos/google.png" alt=""></div>
+                        <div class="popup" id="popup7">
+                            <p>Pesquise informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais</p>
+                            <a href="http://google.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup8')" onmouseout="hidePopup('popup8')">
+                        <div class="content-logo"><img src="img/logos/premieRpet.webp" alt=""></div>
+                        <div class="popup" id="popup8">
+                            <p>A PremieRper® foi fundada em 1995 para tornar a relação das pessoas com seus animais de estimação mais próxima, prazerosa e longa possível.</p>
+                            <a href="https://premierpet.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup9')" onmouseout="hidePopup('popup9')">
+                        <div class="content-logo"><img src="img/logos/logo-brasao.png" alt=""></div>
+                        <div class="popup" id="popup9">
+                            <p>A equipe ACSP está 100% dedicada a formar parcerias e oferecer soluções completas para o seu negócio.</p>
+                            <a href="https://acsp.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup10')" onmouseout="hidePopup('popup10')">
+                        <div class="content-logo"><img src="img/logos/casa-suica.webp" alt=""></div>
+                        <div class="popup" id="popup10">
+                            <p>a casa Suíça. Nossa história começa há muito tempo, na Suíça, onde nasceu Emile Otto Eichenberger.</p>
+                            <a href="http://casasuica.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup11')" onmouseout="hidePopup('popup11')">
+                        <div class="content-logo"><img src="img/logos/rotary.webp" alt=""></div>
+                        <div class="popup" id="popup11">
+                            <p>Por mais de um século, temos criado conexões entre culturas e continentes.</p>
+                            <a href="https://www.rotary.org/pt" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup12')" onmouseout="hidePopup('popup12')">
+                        <div class="content-logo"><img src="img/logos/gaia.webp" alt=""></div>
+                        <div class="popup" id="popup12">
+                            <p>Explore a vida consciente com mais de 8.000 documentários, shows originais, aulas e filmes sobre Gaia.</p>
+                            <a href="https://www.gaia.com/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup13')" onmouseout="hidePopup('popup13')">
+                        <div class="content-logo"><img src="img/logos/estacio.webp" alt=""></div>
+                        <div class="popup" id="popup13">
+                            <p>Realize seu sonho com a Estácio em 2024! Cursos a partir de R$99. Graduação, Pós, MBA. Digital (EaD) ou Presencial. Inscreva- já!</p>
+                            <a href="https://estacio.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup14')" onmouseout="hidePopup('popup14')">
+                        <div class="content-logo"><img src="img/logos/logos-cacau-show.webp" alt=""></div>
+                        <div class="popup" id="popup14">
+                            <p>Cacau Show é a maior rede de Chocolates Finos do mundo.</p>
+                            <a href="https://www.cacaushow.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup15')" onmouseout="hidePopup('popup15')">
+                        <div class="content-logo"><img src="img/logos/atacadao-logo.png" alt=""></div>
+                        <div class="popup" id="popup15">
+                            <p>Faça suas compras de mercado online com preço de atacado.</p>
+                            <a href="https://www.atacadao.com.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    <div class="grid-item-logo" onmouseover="showPopup('popup16')" onmouseout="hidePopup('popup16')">
+                        <div class="content-logo"><img src="img/logos/logos-uninove.webp" alt=""></div>
+                        <div class="popup" id="popup16">
+                            <p>Aqui vão mais informações sobre a empresa.</p>
+                            <a href="https://www.uninove.br/" target="_blank"><button>Visitar</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </section>
+
+
+
+    <section id="equipe">
+        <h3>Conheça nosso time</h3>
+        <section id="team">
+            <div class="team-container">
+                <!-- Repita esta div para cada membro da equipe -->
+                <div class="team-member visible">
+                    <img src="img/equipe/Adriano - Educação Fisíca.png" alt="Adriano - Educação Fisíca">
+                    <p>Adriano - Educação Fisíca</p>
+                </div>
+                <div class="team-member visible">
+                    <img src="img/equipe/Aline - Auxiliar de Serviços.png" alt="Aline - Auxiliar de Serviços">
+                    <p>Aline - Auxiliar de Serviços</p>
+                </div>
+                <div class="team-member visible">
+                    <img src="img/equipe/Angelina - Diretora Pedagógica.png" alt="Angelina - Diretora Pedagógica">
+                    <p>Angelina - Diretora Pedagógica</p>
+                </div>
+                <div class="team-member visible">
+                    <img src="img/equipe/Arlete - Supervisão de Projetos.png" alt="Arlete - Supervisão de Projetos">
+                    <p>Arlete - Supervisão de Projetos</p>
+                </div>
+                <div class="team-member visible">
+                    <img src="img/equipe/Bruno - Pilates.png" alt="Bruno - Pilates">
+                    <p>Bruno - Pilates</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Carla - Costura Criativa.png" alt="Carla - Costura Criativa">
+                    <p>Carla - Costura Criativa</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Cleuza- Diretora Executiva.png" alt="Cleuza- Diretora Executiva">
+                    <p>Cleuza- Diretora Executiva</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Cris - Informática.png" alt="Cris - Informática">
+                    <p>Cris - Informática</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Edina - Contabilidade e Prestação de Contas (1).png" alt="Edina - Contabilidade e Prestação de Contas">
+                    <p>Edina - Contabilidade e Prestação de Contas</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Elizabete - Dança (1).jpg" alt="Elizabete - Dança">
+                    <p>Elizabete - Dança</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Fabiane - Empreendedorismo (1).jpeg" alt="Fabiane - Empreendedorismo">
+                    <p>Fabiane - Empreendedorismo</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Henrique - Meio Ambiente (1).jpg" alt="Henrique - Meio Ambiente">
+                    <p>Henrique - Meio Ambiente</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Junior - ADM e Comunicação (1).jpg" alt="Junior - ADM e Comunicação">
+                    <p>Junior - ADM e Comunicação</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Maria - Crochê (1).jpg" alt="Maria - Crochê">
+                    <p>Maria - Crochê</p>
+                </div>
+                <div class="team-member hidden">
+                    <img src="img/equipe/Michele - Culinária Criativa (1).jpeg" alt="Michele - Culinária Criativa">
+                    <p>Michele - Culinária Criativa</p>
+                </div>
+                
+
+            </div>
+            <div id="btn-mais">
+                <button id="show-more-btn">Mostrar mais</button>
+            </div>
+           
+        </section>
+        <div id="faca-parte">
+            <h4>Quer fazer parte dessa equipe?</h4>
+            <div id="faca-parte-btn">
+                <button>Whatsapp</button>
+                <button>E-mail</button>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="content">
+            <div class="address">
+                <strong>Conexão - Serviço de integração social</strong><br>
+                Rua Augusto, 51<br>
+                Bairro Vila Martins, Carapicuíba - SP<br>
+                CEP: 06351-260<br>
+                <br>
+                (11) 4183-6337<br>
+                <a href="mailto:conexao@conexao.org.br">conexao@conexao.org.br</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>            
+        </div>
+        <div class="menu">
+            <a href="#">Projetos</a>
+            <a href="#">Nossa missão</a>
+            <a href="#">#Apoie</a>
+            <a href="#">Patrocinadores</a>
+            <a href="#">Equipe</a>
+        </div>
+        
+    </footer>
+    <div class="bottom-text">
+        <p>Todos os direitos reservados | Conexão - Serviço de integração social</p>
+    </div>
+</body>
+
+<div class="audio-controls">
+    <button class="audio-btn" id="toggle-audio-btn" onclick="toggleAudioDescription()">
+      <img id="audio-icon" src="img/audio-off.png" alt="Áudio desativado">
+    </button>
+  </div>
+
+  <!-- Inicialize o VLibras -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="./js/mobile-navbar.js">
+</script>
+<script src="js/pop-empresa.js"></script>
+<script src="js/card-doacao.js"></script>
+<script src="js/audio-talk.js"></script>
+<script src="js/handtalk.js"></script>
+<!-- Incluindo AOS JS via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Inicializando AOS
+    AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/nav-rolagem.js"></script>
+<script src="js/ver-mais.js"></script>
+
+<script>
+    $(document).ready(function() {
+        console.log('jQuery carregado com sucesso.');
+        $('nav a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            var $target = $(target);
+            console.log('Clicado no link para:', target);
+            
+            // Ajuste a posição de rolagem com um offset de 50px
+            var targetOffset = $target.offset().top - 70;
+            
+            $('html, body').animate({
+                scrollTop: targetOffset
+            }, 800, function(){
+                // Ajustar o hash da URL sem pular de volta para o ID
+                window.history.pushState(null, null, target);
+            });
+        });
+    });
+</script>
+<script>
+    
+</script>
+</html>
