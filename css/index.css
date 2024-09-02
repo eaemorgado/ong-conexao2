@@ -68,7 +68,7 @@ main {
     
     .slide img {
         width: 100%;
-        height: auto;
+        height: 350px;
         -webkit-mask-image: linear-gradient(to top, transparent 10%, black 40%);
     }
     
@@ -77,7 +77,7 @@ main {
         flex-direction: column;
         gap: 2px;
         position: absolute;
-        top: 50%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, 20%);
         color: white;
@@ -91,6 +91,7 @@ main {
     .text p {
         font-size: 10px;
         font-weight: 500;
+        display: none;
     }
     
     .text button {
@@ -134,7 +135,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 30px;
   }
   
   #projetos h3 {
@@ -148,7 +149,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
     padding-top: 25px;
   }
   
@@ -156,7 +157,7 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
     max-width: 250px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -216,7 +217,7 @@ main {
   
     .card {
       width: 100%;
-      max-width: 200px;
+      max-width: 260px;
     }
   }
 
@@ -226,7 +227,7 @@ main {
         background-color: #2946a0;
         border-radius: 10px;
         height: auto;
-        margin-top: 100px;
+        margin-top: 50px;
         padding-left: 25px;
         padding-right: 25px;
         align-items: center ;
@@ -483,7 +484,7 @@ main {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 200px;
-  max-width: 350px;
+  max-width: 280px;
   transition: transform 0.2s ease;
   border: none;
   margin-top: 50px;
@@ -501,12 +502,13 @@ main {
 
 .tab {
   background-color: #19317a;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   transition: background-color 0.2s ease;
   flex: 1;
   text-align: center;
+  font-size: 12px;
 }
 
 .tab.active {
