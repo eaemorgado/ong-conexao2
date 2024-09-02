@@ -6,31 +6,40 @@
 //   document.getElementById(id).style.display = 'none';
 // }
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
-  function showPopup(popup) {
-    popup.classList.add('show');
+  function showPopup(id) {
+    document.getElementById(id).style.display = 'block';
   }
 
-  function hidePopup(popup) {
-    popup.classList.remove('show');
+  function hidePopup(id) {
+    document.getElementById(id).style.display = 'none';
   }
 
   const logoContainers = document.querySelectorAll('.logo-container');
 
   logoContainers.forEach(container => {
     const popupId = container.getAttribute('data-popup-id');
-    const popup = document.getElementById(popupId);
 
-    container.addEventListener('mouseover', () => showPopup(popup));
-    container.addEventListener('mouseout', () => hidePopup(popup));
+    container.addEventListener('mouseover', () => showPopup(popupId));
+    container.addEventListener('mouseout', () => hidePopup(popupId));
 
-    // Para dispositivos móveis, usamos toque
-    container.addEventListener('touchstart', () => {
-      if (popup.classList.contains('show')) {
-        hidePopup(popup);
+    // Para dispositivos móveis, usamos 'touchstart'
+    container.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Previne o comportamento padrão do toque
+      const popup = document.getElementById(popupId);
+      if (popup.style.display === 'block') {
+        hidePopup(popupId);
       } else {
-        showPopup(popup);
+        showPopup(popupId);
       }
+    });
+
+    // Esconder popup ao sair da área no touch
+    container.addEventListener('touchend', (event) => {
+      event.preventDefault();
+      hidePopup(popupId);
     });
   });
 });
